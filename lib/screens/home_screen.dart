@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
+import '../models/models.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -13,10 +15,11 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Palette.scaffold,
       body: CustomScrollView(
+        physics: BouncingScrollPhysics(),
         slivers: [
           SliverAppBar(
             systemOverlayStyle: const SystemUiOverlayStyle(
-              statusBarColor: Colors.transparent,
+              statusBarColor: Colors.white,
               statusBarIconBrightness: Brightness.dark,
             ),
             backgroundColor: Colors.white,
@@ -37,25 +40,31 @@ class HomeScreen extends StatelessWidget {
                   onPressed: () {}),
             ],
           ),
-          CreatePostContainer(
-            currentUser: currentUser,
+          SliverToBoxAdapter(
+            child: CreatePostContainer(
+              currentUser: currentUser,
+            ),
           ),
           SliverPadding(
               padding: EdgeInsetsDirectional.only(
                   start: 0, end: 0, top: 10, bottom: 5),
-              sliver:
-                  SliverToBoxAdapter(child: Rooms(onlineUsers: onlineUsers,))),
+              sliver: SliverToBoxAdapter(
+                  child: Rooms(
+                onlineUsers: onlineUsers,
+              ))),
           SliverPadding(
               padding: EdgeInsetsDirectional.only(
                   start: 0, end: 0, top: 10, bottom: 5),
-              sliver:
-              SliverToBoxAdapter(
-                  child: Stories(
-                      currentUser: currentUser,
-                      stories: stories
-                  )
-              )
-          ),
+              sliver: SliverToBoxAdapter(
+                  child: Stories(currentUser: currentUser, stories: stories))),
+          SliverList(
+              delegate: SliverChildBuilderDelegate(
+            (context, i) {
+              final Post post = posts[i];
+              return PostContainer(post: post);
+            },
+            childCount: posts.length,
+          ))
         ],
       ),
     );
