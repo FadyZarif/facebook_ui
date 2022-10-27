@@ -11,7 +11,13 @@ class Rooms extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: Responsive.isDesktop(context)? BorderRadiusDirectional.circular(10):null,
+          boxShadow: Responsive.isDesktop(context)? [
+            BoxShadow(color: Colors.black12,offset: Offset(0, 2),blurRadius: 4)
+          ] : null
+      ),
       height: 66,
       child: ListView.builder(
           padding: EdgeInsets.symmetric(vertical: 10, horizontal: 4),
@@ -66,7 +72,6 @@ class _CreateRoomButton extends StatelessWidget {
         child: Row(
           children: [
               ShaderMask(
-
                   shaderCallback: (rect) {
                    return Palette.createRoomGradient.createShader(rect);
                   },

@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:facebook_ui/models/models.dart';
+import 'package:facebook_ui/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class CreatePostContainer extends StatelessWidget {
@@ -11,9 +12,16 @@ class CreatePostContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      clipBehavior: Clip.antiAliasWithSaveLayer,
+      decoration:BoxDecoration(
+        borderRadius: Responsive.isDesktop(context)? BorderRadiusDirectional.circular(10):null,
+        color: Colors.white,
+        boxShadow: Responsive.isDesktop(context)? [
+          BoxShadow(color: Colors.black12,offset: Offset(0, 2),blurRadius: 4)
+        ] : null
+      ),
       padding:
           const EdgeInsetsDirectional.only(end: 12, start: 12, top: 8, bottom: 0),
-      color: Colors.white,
       child: Column(
         children: [
           Row(

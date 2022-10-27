@@ -12,9 +12,15 @@ class PostContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration:BoxDecoration(
+        borderRadius: Responsive.isDesktop(context)? BorderRadiusDirectional.circular(10):null,
+        color: Colors.white,
+          boxShadow: Responsive.isDesktop(context)? [
+            BoxShadow(color: Colors.black12,offset: Offset(0, 2),blurRadius: 4)
+          ] : null
+      ),
       margin: EdgeInsets.symmetric(vertical: 5),
       padding: EdgeInsets.symmetric(vertical: 8,),
-      color: Colors.white,
       child: Column(
         children: [
           Padding(
