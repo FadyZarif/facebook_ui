@@ -6,115 +6,72 @@ import '../models/user_model.dart';
 final User currentUser = User(
   name: 'Fady Zarif',
   imageUrl:
-      'https://scontent.fcai1-2.fna.fbcdn.net/v/t39.30808-6/224890955_4038770452844353_5664240021604601132_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFYJJES53dhEOoZ4933esroUSOdThTziLBRI51OFPOIsBSXDI89eEX76DIo3d8svYTXQ2D66FZzzNRmSdqcxXZA&_nc_ohc=-nOunOGsDRgAX-APHcc&_nc_ht=scontent.fcai1-2.fna&oh=00_AT9cNZ9z28pYZvd6n6jOFW3W790hTHea6z3QeR5vwLrJvw&oe=635C6A2F',
+      'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/pro.png?alt=media&token=36ed8920-df3d-420b-b643-3978981b8861',
 );
 
 final List<User> onlineUsers = [
   const User(
-    name: 'David Brooks',
+    name: 'Pola Miras',
     imageUrl:
-        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/pola.png?alt=media&token=e4064195-ebe0-46ec-9407-fd0030f4613e',
   ),
   const User(
-    name: 'Jane Doe',
+    name: 'Abanob Yousery',
     imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/pepo.png?alt=media&token=65920cf1-9500-41c0-885e-deaa5ca14cf0',
   ),
   const User(
-    name: 'Matthew Hinklelis',
+    name: 'Mariam Nasr',
     imageUrl:
-        'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/mariam.png?alt=media&token=bb2bddd5-ce72-4848-9f78-b6b061f83c06',
   ),
   const User(
-    name: 'Amy Smith',
+    name: 'Maria Zarif Roshdy',
     imageUrl:
-        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/maria.png?alt=media&token=3ba822f4-0a98-46b4-bfa7-9e723e4741d5',
   ),
   const User(
-    name: 'Ed Morris',
+    name: 'Sandy Samoel',
     imageUrl:
-        'https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/sandy.png?alt=media&token=523caf9a-d745-4d51-8a82-d7f477dfc43e',
   ),
   const User(
-    name: 'Carolyn Duncan',
+    name: 'Fady Ebrahim Ayad',
     imageUrl:
-        'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/fod.png?alt=media&token=1dae3716-930d-4dfc-8aca-e6396f5f00af',
   ),
   const User(
-    name: 'Paul Pinnock',
+    name: 'Sabah Muhamed',
     imageUrl:
-        'https://images.unsplash.com/photo-1519631128182-433895475ffe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/sabah.png?alt=media&token=eeaf3760-8f75-46be-b5bb-95b2a393f543',
   ),
   const User(
-      name: 'Elizabeth Wong',
+      name: 'George Ayman',
       imageUrl:
-          'https://images.unsplash.com/photo-1515077678510-ce3bdf418862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=675&q=80'),
+          'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/geo.png?alt=media&token=077b74b9-c7b5-4865-87cd-f5accb6a1c5b'),
   const User(
-    name: 'James Lathrop',
+    name: 'Zarif Roshdy',
     imageUrl:
-        'https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=592&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/zari.png?alt=media&token=7a3ff1c0-9094-41a4-8bf3-c9abb332166b',
   ),
   const User(
-    name: 'Jessie Samson',
+    name: 'Marian Nasr',
     imageUrl:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/marian.png?alt=media&token=06ceba28-ad94-42b1-80a3-1c028f578ba4',
   ),
   const User(
-    name: 'David Brooks',
+    name: 'Ammar Ehab',
     imageUrl:
-        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/ammar.png?alt=media&token=e2ed6365-28ee-4bb1-832c-8bd2c2184271',
   ),
-  const User(
-    name: 'Jane Doe',
-    imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-  ),
-  const User(
-    name: 'Matthew Hinkle',
-    imageUrl:
-        'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80',
-  ),
-  const User(
-    name: 'Amy Smith',
-    imageUrl:
-        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80',
-  ),
-  const User(
-    name: 'Ed Morris',
-    imageUrl:
-        'https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&q=80',
-  ),
-  const User(
-    name: 'Carolyn Duncan',
-    imageUrl:
-        'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-  ),
-  const User(
-    name: 'Paul Pinnock',
-    imageUrl:
-        'https://images.unsplash.com/photo-1519631128182-433895475ffe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-  ),
-  const User(
-      name: 'Elizabeth Wong',
-      imageUrl:
-          'https://images.unsplash.com/photo-1515077678510-ce3bdf418862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=675&q=80'),
-  const User(
-    name: 'James Lathrop',
-    imageUrl:
-        'https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=592&q=80',
-  ),
-  const User(
-    name: 'Jessie Samson',
-    imageUrl:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-  ),
+
 ];
 
 final List<Story> stories = [
   Story(
     user: onlineUsers[2],
     imageUrl:
-        'https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/mariamst.png?alt=media&token=ee8264dc-5db5-4556-8b8a-f01a41a196d8',
   ),
   Story(
     user: onlineUsers[6],
@@ -125,62 +82,52 @@ final List<Story> stories = [
   Story(
     user: onlineUsers[3],
     imageUrl:
-        'https://images.unsplash.com/photo-1497262693247-aa258f96c4f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=624&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/mariast.png?alt=media&token=1d866c26-e8be-4119-b2df-6d4b5a572a79',
   ),
   Story(
     user: onlineUsers[9],
     imageUrl:
-        'https://images.unsplash.com/photo-1496950866446-3253e1470e8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/marianst.png.jpg?alt=media&token=1c4682e6-b8d9-44b0-bf46-cb1336011527',
     isViewed: true,
   ),
   Story(
-    user: onlineUsers[7],
+    user: onlineUsers[1],
     imageUrl:
-        'https://images.unsplash.com/photo-1475688621402-4257c812d6db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/pepost.png?alt=media&token=bbf0825e-606f-456a-b06b-972e801173f7',
   ),
   Story(
-    user: onlineUsers[2],
+    user: onlineUsers[5],
     imageUrl:
         'https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80',
   ),
   Story(
-    user: onlineUsers[6],
+    user: onlineUsers[7],
     imageUrl:
         'https://images.unsplash.com/photo-1499363536502-87642509e31b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
     isViewed: true,
   ),
   Story(
-    user: onlineUsers[3],
+    user: onlineUsers[8],
     imageUrl:
         'https://images.unsplash.com/photo-1497262693247-aa258f96c4f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=624&q=80',
   ),
-  Story(
-    user: onlineUsers[9],
-    imageUrl:
-        'https://images.unsplash.com/photo-1496950866446-3253e1470e8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-    isViewed: true,
-  ),
-  Story(
-    user: onlineUsers[7],
-    imageUrl:
-        'https://images.unsplash.com/photo-1475688621402-4257c812d6db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
-  ),
+
 ];
 
 final List<Post> posts = [
   Post(
     user: currentUser,
-    caption: 'Check out these cool puppers',
+    caption: 'Happy New Year',
     timeAgo: '58m',
-    imageUrl: 'https://images.unsplash.com/photo-1525253086316-d0c936c814f8',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/newyear.png?alt=media&token=33aa9e17-03ec-4bf7-bacc-7d286ba26ab2',
     likes: 1202,
     comments: 184,
     shares: 96,
   ),
   Post(
-    user: onlineUsers[5],
+    user: onlineUsers[0],
     caption:
-        'Please enjoy this placeholder text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'أول مرة ألاحظ إن جملة (انهاردة بليل) غير منطقية تماماً ... 🧐 \n عشان كلمة (انهاردة) في أصلها اللغوي المفروض تتكتب (النهار دة) 😲ه \n ولما فكرت لاحظت إن (بكرة بليل) برضو مش منطقية 😂 \n وفوق كل دة بقى كلمة (بليل) المفروض تتكتب (بـالليل) 😉🤣ه',
     timeAgo: '3hr',
     imageUrl: null,
     likes: 683,
@@ -188,43 +135,43 @@ final List<Post> posts = [
     shares: 18,
   ),
   Post(
-    user: onlineUsers[4],
-    caption: 'This is a very good boi.',
+    user: onlineUsers[3],
+    caption: 'الحياة جميلة معايا \n عشان انتوا حياتي ❤️',
     timeAgo: '8hr',
     imageUrl:
-        'https://images.unsplash.com/photo-1575535468632-345892291673?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/mariapo.png?alt=media&token=62cfd0ca-abae-4ece-b34a-01eeb840be9b',
     likes: 894,
     comments: 201,
     shares: 27,
   ),
   Post(
-    user: onlineUsers[3],
-    caption: 'Adventure 🏔',
+    user: onlineUsers[4],
+    caption: '❤️❤️❤️❤️ طب عقبال كل مره',
     timeAgo: '15hr',
     imageUrl:
-        'https://images.unsplash.com/photo-1573331519317-30b24326bb9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/sandypo.png?alt=media&token=1f811052-0bcc-4841-8b2b-031225dcb639',
     likes: 722,
     comments: 183,
     shares: 42,
   ),
   Post(
-    user: onlineUsers[0],
-    caption:
-        'More placeholder text for the soul: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    timeAgo: '1d',
-    imageUrl: null,
-    likes: 482,
-    comments: 37,
-    shares: 9,
-  ),
-  Post(
-    user: onlineUsers[9],
-    caption: 'A classic.',
+    user: onlineUsers[2],
+    caption: 'Luxor ',
     timeAgo: '1d',
     imageUrl:
-        'https://images.unsplash.com/reserve/OlxPGKgRUaX0E1hg3b3X_Dumbo.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/mariampo.png?alt=media&token=91d67c60-93b9-43a8-b5c2-4cf35a04a556',
     likes: 1523,
     shares: 129,
     comments: 301,
-  )
+  ),
+  Post(
+    user: onlineUsers[5],
+    caption: '❤️🔥 نخليها هنا للذكري بقي  ',
+    timeAgo: '2d',
+    imageUrl:
+    'https://firebasestorage.googleapis.com/v0/b/grocery-app-with-admin-p-8c357.appspot.com/o/fadypo.png?alt=media&token=9d4706f2-280f-49b6-b0e4-41910d1cbeab',
+    likes: 1823,
+    shares: 189,
+    comments: 501,
+  ),
 ];

@@ -139,7 +139,7 @@ class _PostFooter extends StatelessWidget {
               onPressed: (){},
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
+                children:  [
                   Icon(MdiIcons.commentOutline,color: Colors.grey,),
                   SizedBox(
                     width: 3,
@@ -153,7 +153,7 @@ class _PostFooter extends StatelessWidget {
             MaterialButton(
               onPressed: (){},
               child: Row(
-                children: const [
+                children:  [
                   Icon(MdiIcons.shareOutline,color: Colors.grey,),
                   SizedBox(
                     width: 3,

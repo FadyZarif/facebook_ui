@@ -21,7 +21,7 @@ class _NavScreenState extends State<NavScreen> {
     Scaffold(),
     Scaffold(),
   ];
-  final List<IconData> _icons = const [
+  final List<IconData> _icons =  [
     Icons.home,
     Icons.ondemand_video,
     MdiIcons.accountCircleOutline,
