@@ -1,7 +1,7 @@
 # facebook Responsive UI Flutter
 
-A UI clone of the Facebook app that i created using Flutter.
-To preview this app, follow this link: [Fodbook](https://fodbook.ishabrawy.com/)
+A UI clone of the Facebook site that i created using Flutter.
+To preview this app, follow this site: [Fodbook](https://fodbook.ishabrawy.com/)
 
 ## Demo
 
